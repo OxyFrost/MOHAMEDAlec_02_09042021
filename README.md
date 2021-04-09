@@ -1,2 +1,2 @@
-# MOHAMEDAlec_02_09042021
+# Reservia - OC MOHAMED Alec
 Projet Reservia pour OpenClassrooms
