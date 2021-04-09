@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+body {
+    font-family: "Raleway", "Sans serif", serif;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ /* Partie NavBar */
+.navbar{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 125px;
+    vertical-align: middle;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    flex-flow: wrap;
+    text-align: center;
+    padding-left: 0px;
+}
+
+
+.nav-item a {
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-weight: 400;
+    border-top: solid 3px transparent;
+}
+
+.menu{
+    align-self: end;
+}
+
+.filler{
+    flex: auto;
+}
+
+.hebergement a{
+    color: #0065FC;
+}
+
+.activity a {
+    color: #000000;
+}
+
+.signup a{
+    font-weight:bold;
+    display: block;
+    color: #0065FC;
+}
+
+.nav-item:hover a {
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
+}
+
+/* Fin Partie NavBar */
+
+/* Partie Contenu */
+
+.section{
+    padding-left: 1em;
+}
+
+/* Search Bar */
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchBar {
+    border: 1px solid #F2F2F2;
+    border-right: none;
+    border-left: none;
+    padding: 5px;
+    outline: none;
+}
+
+.searchButtonGPS {
+    width: 40px;
+    height: 36px;
+    border: 2px solid #F2F2F2;
+    background: #F2F2F2;
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchButton {
+    height: 36px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+/* Partie Footer */
+
+.footer{
+    background-color: #F2F2F2;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.categorie{
+    padding: 10px 20px;
+}
+
+.liste{
+    padding-left: 0;
+    list-style: none;
+}
+
+.liste a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Fin Partie Footer */
+
+/*Partie Responsive site Mobile */
+@media only screen
+and (max-device-width : 506px) {
+    .signup{
+        order: 1;
+    }
+
+    .menu{
+        order: 2;
+        margin-top: inherit;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .nav-item{
+        flex:1;
+    }
+
+    .activity a,.hebergement a{
+        width: 40vw;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
+
+/* Fin Partie Responsive */
