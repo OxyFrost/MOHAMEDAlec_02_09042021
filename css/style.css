@@ -50,6 +50,7 @@ button {
     text-decoration: none;
     font-weight: 400;
     border-top: solid 3px transparent;
+    transition: border-top 100ms ease-out 100ms
 }
 
 .menu{
@@ -135,6 +136,8 @@ button {
     justify-content: flex-start;
 }
 
+
+
 .filterButton{
     display: flex;
     border: 1px solid #b7b6b6;
@@ -143,6 +146,12 @@ button {
     vertical-align: middle;
     background-color: white;
     margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.filterButton:hover .filterIcon{
+    background-color: rgba(164, 189, 243, 0.51);
 }
 
 .filterIcon{
@@ -154,6 +163,7 @@ button {
     position: relative;
     left: -6px;
     top: -1px;
+    transition: background-color 200ms ease-out 100ms
 
 }
 
@@ -161,6 +171,132 @@ button {
     padding: 14px;
     font-weight: 800;
     font-size: 15px;
+}
+
+.informations{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infoIcons{
+    color: #0065FC;
+    border: 1px solid #b7b6b6;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.textInfo{
+    margin-left: 5px;
+    padding-top: 6px;
+    flex: 1;
+}
+
+/* Partie contenu Hebergements */
+
+.sectionHebergements{
+    width: 70%;
+    float: left;
+    margin: 10px 15px 10px 0px;
+}
+
+.backgroundHebergements{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.listHebergements{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.cardContainer {
+    padding: 2px 10px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+
+}
+
+.card-img {
+    align-self: center;
+    margin: 10px 5px 10px 5px;
+    width: 95%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cardTitle{
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.cardContent{
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.sectionPopulaire{
+    width: 25%;
+    float: left;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.cardPopulaire {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 300px;
+    height: 125px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+
+}
+
+.card-imgPopulaire {
+    align-self: center;
+    margin: 10px 5px 10px 5px;
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover, .cardPopulaire:hover {
+    box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* Partie Footer */
@@ -190,9 +326,26 @@ button {
 
 /*Fin Partie Footer */
 
-/*Partie Responsive site Mobile */
+/* Partie Responsive pour Ipad */
+
+@media only screen
+and (max-device-width : 1024px) {
+
+    .sectionHebergements{
+        width: 95%;
+    }
+
+    .sectionPopulaire{
+        width: 95%;
+    }
+
+}
+/* Fin Partie Responsive pour Ipad */
+
+/* Partie Responsive site Mobile */
 @media only screen
 and (max-device-width : 506px) {
+
     .signup{
         order: 1;
     }
@@ -210,7 +363,7 @@ and (max-device-width : 506px) {
     }
 
     .activity a,.hebergement a{
-        width: 40vw;
+        width: 35vw;
     }
 
     .titleFilter{
@@ -219,11 +372,7 @@ and (max-device-width : 506px) {
 
     .filterButton{
         margin-top: 10px;
-        flex-flow: wrap column;
-        width: 80%;
     }
-
-
 
     .footer{
         flex-direction: column;
