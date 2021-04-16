@@ -199,6 +199,11 @@ button {
 
 /* Partie contenu Hebergements */
 
+.contentContainer{
+    display:flex;
+    flex-flow: row;
+}
+
 .sectionHebergements{
     width: 70%;
     float: left;
@@ -295,9 +300,55 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.card:hover, .cardPopulaire:hover {
+.card:hover, .cardPopulaire:hover, .cardActivités:hover {
     box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.ActivitésContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+
+.cardActivités{
+
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 325px;
+    border-radius: 10px;
+    background-color: wheat;
+    margin: 10px 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.cardImgActivités{
+    align-self: center;
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    float: left;
+
+}
+
+.small{
+    height: 190px;
+}
+
+.medium{
+    height: 290px;
+}
+
+.large{
+ height: 500px;
+}
+
+
 
 /* Partie Footer */
 
@@ -331,12 +382,21 @@ button {
 @media only screen
 and (max-device-width : 1024px) {
 
+    .contentContainer{
+        flex-flow: column;
+    }
     .sectionHebergements{
         width: 95%;
+        float: unset;
     }
 
     .sectionPopulaire{
         width: 95%;
+        float: unset;
+    }
+
+    .large, .medium, .small{
+        height: 200px;
     }
 
 }
@@ -345,6 +405,14 @@ and (max-device-width : 1024px) {
 /* Partie Responsive site Mobile */
 @media only screen
 and (max-device-width : 506px) {
+
+    .sectionPopulaire{
+        order: 1;
+    }
+
+    .sectionHebergements{
+        order:2;
+    }
 
     .signup{
         order: 1;

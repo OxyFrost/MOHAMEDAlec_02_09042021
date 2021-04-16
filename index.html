@@ -1,276 +1,293 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Reservia - OC</title>
+    <title>Reservia - OC</title>
 
-        <!-- Importation CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/all.css" > <!-- FontAwesome -->
+    <!-- Importation CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet"> <!-- FontAwesome -->
 
-    </head>
-    <body>
-        <div class="container">
-            <!-- Partie HEADER -->
-            <header>
-                <nav class="navbar">
-                    <a href="index.html" class="logo">
-                        <img src="img/logo/Reservia@3x.png" alt="Reservia Logo">
-                    </a>
-                    <div class="filler"></div> <!-- Permets d'avoir correctement le menu à droite -->
-                    <ul class="nav-links menu">
-                        <li class="nav-item hebergement"><a href="#">Hébergement</a></li>
-                        <li class="nav-item activity"><a class="" href="#">Activités</a></li>
-                    </ul>
-                    <ul class="nav-links signup">
-                        <li class="nav-item "><a class="" href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- Partie Contenu site -->
-            <section class="section">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <div class="search">
-                    <button type="submit" class="searchButtonGPS">
-                        <i class="fa fa-map-marker-alt"></i>
-                    </button>
-                    <input type="text" class="searchBar" value="Marseille, France">
-                    <button type="submit" class="searchButton">
-                       Rechercher
-                    </button>
-                </div>
+</head>
+<body>
+<div class="container">
+    <!-- Partie HEADER -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img alt="Reservia Logo" src="img/logo/Reservia@3x.png">
+            </a>
+            <div class="filler"></div> <!-- Permets d'avoir correctement le menu à droite -->
+            <ul class="nav-links menu">
+                <li class="nav-item hebergement"><a href="#">Hébergement</a></li>
+                <li class="nav-item activity"><a class="" href="#">Activités</a></li>
+            </ul>
+            <ul class="nav-links signup">
+                <li class="nav-item "><a class="" href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Partie Contenu site -->
+    <section class="section">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="search">
+            <button class="searchButtonGPS" type="submit">
+                <i class="fa fa-map-marker-alt"></i>
+            </button>
+            <input class="searchBar" type="text" value="Marseille, France">
+            <button class="searchButton" type="submit">
+                Rechercher
+            </button>
+        </div>
 
-                <!-- Filtre -->
-                <div class="filter">
-                    <h4 class="titleFilter">Filtres</h4>
-                    <form action="#">
-                        <button type="submit" class="filterButton">
+        <!-- Filtre -->
+        <div class="filter">
+            <h4 class="titleFilter">Filtres</h4>
+            <form action="#">
+                <button class="filterButton" type="submit">
                             <span class="filterIcon">
                                 <i class="fa fa-lg fa-money-bill-wave"></i>
                             </span>
-                            <span class="filterText">Economique</span>
-                        </button>
-                    </form>
-                    <form action="#">
-                        <button type="submit" class="filterButton">
+                    <span class="filterText">Economique</span>
+                </button>
+            </form>
+            <form action="#">
+                <button class="filterButton" type="submit">
                             <span class="filterIcon">
                                 <i class="fa fa-lg fa-child"></i>
                             </span>
-                            <span class="filterText">Familial</span>
-                        </button>
-                    </form>
-                    <form action="#">
-                        <button type="submit" class="filterButton">
+                    <span class="filterText">Familial</span>
+                </button>
+            </form>
+            <form action="#">
+                <button class="filterButton" type="submit">
                             <span class="filterIcon">
                                 <i class="fa fa-lg fa-heart"></i>
                             </span>
-                            <span class="filterText">Romantique</span>
-                        </button>
-                    </form>
-                    <form action="#">
-                        <button type="submit" class="filterButton">
+                    <span class="filterText">Romantique</span>
+                </button>
+            </form>
+            <form action="#">
+                <button class="filterButton" type="submit">
                             <span class="filterIcon">
                                 <i class="fa fa-lg fa-dog"></i>
                             </span>
-                            <span class="filterText">Animaux autorisés</span>
-                        </button>
-                    </form>
-                </div>
-
-                <div class="informations">
-                    <div class="infoIcons">
-                        <i class="fa fa fa-info" ></i>
-                    </div>
-                    <span class="textInfo">Plus de 500 logements sont disponibles dans cette ville</span>
-                </div>
-
-
-                <!-- Fin Filtre -->
-                <article class="sectionHebergements">
-                    <div class="backgroundHebergements">
-                        <h3 class="titleFilter">Hébergements à Marseille</h3>
-                        <div class="listHebergements">
-                            <div class="card">
-                                <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-lg fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><b>Afficher plus</b></p>
-                    </div>
-
-
-
-
-                </article>
-
-                <aside class="sectionPopulaire">
-                    <div class="backgroundHebergements">
-                        <h3 class="titleFilter">Les plus populaires</h3>
-                        <div class="listHebergements">
-
-                            <div class="cardPopulaire">
-                                <img class="card-imgPopulaire" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="cardPopulaire">
-                                <img class="card-imgPopulaire" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="cardPopulaire">
-                                <img class="card-imgPopulaire" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <div class="cardContainer">
-                                    <p class="cardTitle">Auberge de la Cannebière</p>
-                                    <p class="cardContent">Nuit à partir de <b>25€</b></p>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: #0065FC" ></i>
-                                    <i class="fa fa-xs fa-star" style="color: lightgrey" ></i>
-                                    </p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <p><b>Afficher plus</b></p>
-                    </div>
-
-
-
-
-                </aside>
-
-            </section>
-
-            <section>
-            </section>
-            <!-- Partie FOOTER -->
-            <footer class="footer">
-                <div class="categorie">
-                    <h3>A propos</h3>
-                    <ul class="liste">
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales de vente</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
-                    </ul>
-                </div>
-                <div class="categorie">
-                    <h3>Nos hébergements</h3>
-                    <ul class="liste">
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Soumettre votre hôtel</a></li>
-                    </ul>
-                </div>
-                <div class="categorie">
-                    <h3>Assistance</h3>
-                    <ul class="liste">
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
-                </div>
-            </footer>
+                    <span class="filterText">Animaux autorisés</span>
+                </button>
+            </form>
         </div>
-    </body>
+
+        <div class="informations">
+            <div class="infoIcons">
+                <i class="fa fa fa-info"></i>
+            </div>
+            <span class="textInfo">Plus de 500 logements sont disponibles dans cette ville</span>
+        </div>
+
+
+        <!-- Fin Filtre -->
+        <div class="contentContainer">
+            <article class="sectionHebergements">
+                <div class="backgroundHebergements">
+                    <h3 class="titleFilter">Hébergements à Marseille</h3>
+                    <div class="listHebergements">
+                        <div class="card">
+                            <img class="card-img" alt="Auberge de la Cannebière" src="img/hebergements/4_small/">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: lightgrey"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img" alt="" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: lightgrey"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: lightgrey"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: lightgrey"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: lightgrey"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-lg fa-star" style="color: lightgrey"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>Afficher plus</b></p>
+                </div>
+            </article>
+
+            <aside class="sectionPopulaire">
+                <div class="backgroundHebergements">
+                    <h3 class="titleFilter">Les plus populaires</h3>
+                    <div class="listHebergements">
+
+                        <div class="cardPopulaire">
+                            <img class="card-imgPopulaire"
+                                 src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: lightgrey"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cardPopulaire">
+                            <img class="card-imgPopulaire"
+                                 src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: lightgrey"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cardPopulaire">
+                            <img class="card-imgPopulaire"
+                                 src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                            <div class="cardContainer">
+                                <p class="cardTitle">Auberge de la Cannebière</p>
+                                <p class="cardContent">Nuit à partir de <b>25€</b></p>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: #0065FC"></i>
+                                <i class="fa fa-xs fa-star" style="color: lightgrey"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p><b>Afficher plus</b></p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Activités à Marseille -->
+    <section class="section">
+        <h3>Activités à Marseille</h3>
+        <div class="ActivitésContainer">
+            <div class="listHebergements">
+                <div class="cardActivités large">
+                    <img class="cardImgActivités" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                    <div class="cardContainer">
+                        <p class="cardTitle">Auberge de la Cannebière</p>
+                    </div>
+                </div>
+
+                <div class="cardActivités medium">
+                    <img class="cardImgActivités" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                    <div class="cardContainer">
+                        <p class="cardTitle">Auberge de la Cannebière</p>
+                    </div>
+                </div>
+
+                <div class="cardActivités small">
+                    <img class="cardImgActivités" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                    <div class="cardContainer">
+                        <p class="cardTitle">Auberge de la Cannebière</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+
+<!-- Partie FOOTER -->
+<footer class="footer">
+    <div class="categorie">
+        <h3>A propos</h3>
+        <ul class="liste">
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </div>
+    <div class="categorie">
+        <h3>Nos hébergements</h3>
+        <ul class="liste">
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+    </div>
+    <div class="categorie">
+        <h3>Assistance</h3>
+        <ul class="liste">
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </div>
+</footer>
+</div>
+</body>
 </html>
