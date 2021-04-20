@@ -84,9 +84,11 @@ button {
 
 /* Partie Contenu */
 
-.section{
+.section, .sectionActivity{
     padding-left: 1em;
 }
+
+
 
 /* Search Bar */
 .search {
@@ -317,7 +319,7 @@ button {
     flex-flow: column;
     width: 325px;
     border-radius: 10px;
-    background-color: wheat;
+    background-color: white;
     margin: 10px 10px 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -382,6 +384,14 @@ button {
 @media only screen
 and (max-device-width : 1024px) {
 
+    .sectionPopulaire{
+        order: 1;
+    }
+
+    .sectionHebergements{
+        order:2;
+    }
+
     .contentContainer{
         flex-flow: column;
     }
@@ -399,20 +409,20 @@ and (max-device-width : 1024px) {
         height: 200px;
     }
 
+    .two{
+        order: 1;
+    }
+
+    .one{
+        order: 2;
+    }
+
 }
 /* Fin Partie Responsive pour Ipad */
 
 /* Partie Responsive site Mobile */
 @media only screen
 and (max-device-width : 506px) {
-
-    .sectionPopulaire{
-        order: 1;
-    }
-
-    .sectionHebergements{
-        order:2;
-    }
 
     .signup{
         order: 1;
@@ -440,6 +450,10 @@ and (max-device-width : 506px) {
 
     .filterButton{
         margin-top: 10px;
+    }
+
+    .sectionActivity{
+        padding-left: 0;
     }
 
     .footer{
