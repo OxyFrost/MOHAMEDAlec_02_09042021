@@ -309,6 +309,11 @@ button {
     box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.textLink{
+    text-decoration: none;
+    color: black;
+}
+
 .ActivitésContainer {
     display: flex;
     flex-flow: column wrap;
