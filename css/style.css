@@ -107,6 +107,7 @@ button {
     border-left: none;
     padding: 5px;
     outline: none;
+    font-weight: bold;
 }
 
 .searchButtonGPS {
@@ -216,6 +217,13 @@ button {
 }
 
 .backgroundHebergements {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.backgroundPopulaire {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
@@ -379,6 +387,10 @@ button {
     list-style: none;
 }
 
+.liste li{
+    padding: 3px;
+}
+
 .liste a {
     text-decoration: none;
     color: black;
@@ -421,12 +433,12 @@ and (max-device-width: 1024px) {
         height: 200px;
     }
 
-    .two {
-        order: 1;
+    .one{
+        order: 2;
     }
 
-    .one {
-        order: 2;
+    .two{
+        order: 1;
     }
 
 }
@@ -453,8 +465,29 @@ and (max-device-width: 506px) {
         flex: 1;
     }
 
+    .nav-item:hover a {
+        border-top: unset;
+        border-bottom: solid 3px #0065FC;
+    }
+
     .activity a, .hebergement a {
         width: 35vw;
+    }
+
+    .backgroundHebergements{
+        background-color: #fff;
+        padding: unset;
+    }
+
+    .backgroundPopulaire{
+        border-radius: unset;
+        width: 100%;
+        position: relative;
+        left: -15px;
+    }
+
+    .card{
+        width: 95%;
     }
 
     .titleFilter {
@@ -467,6 +500,10 @@ and (max-device-width: 506px) {
 
     .sectionActivity {
         padding-left: 0;
+    }
+
+    .one, .two{
+        order: unset;
     }
 
     .footer {
