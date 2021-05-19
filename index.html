@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Création de la maquette Reservia pour le projet 2 d'OpenClassrooms">
+
     <title>Reservia - OC</title>
 
     <!-- Importation CSS -->
@@ -21,8 +22,8 @@
             </a>
             <div class="filler"></div> <!-- Permets d'avoir correctement le menu à droite -->
             <ul class="nav-links menu">
-                <li class="nav-item hebergement"><a href="#Hebergements">Hébergement</a></li>
-                <li class="nav-item activity"><a href="#Activites">Activités</a></li>
+                <li  class="nav-item hebergement active"><a href="#Hebergements">Hébergement</a></li>
+                <li  class="nav-item activity"><a href="#Activites">Activités</a></li>
             </ul>
             <ul class="nav-links signup">
                 <li class="nav-item "><a href="#">S'inscrire</a></li>
@@ -323,5 +324,20 @@
         </div>
     </footer>
 </div>
+<script>
+    var items = document.getElementsByClassName('nav-item');
+    for (var i = 0; i < items.length; i++) {
+        items[i].addEventListener('click', printDetails);
+    }
+
+    function printDetails(e) {
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].classList.contains("active")) {
+                items[i].classList.toggle("active")
+            }
+        }
+        this.classList.add("active");
+    }
+</script>
 </body>
 </html>
