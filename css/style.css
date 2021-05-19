@@ -63,7 +63,7 @@ button {
 }
 
 .hebergement a {
-    color: #0065FC;
+    color: #000000;
 }
 
 .activity a {
@@ -76,7 +76,7 @@ button {
     color: #0065FC;
 }
 
-.nav-item:hover a {
+.nav-item:hover a, .nav-item.active a {
     border-top: solid 3px #0065FC;
     color: #0065FC;
 }
@@ -465,7 +465,7 @@ and (max-device-width: 506px) {
         flex: 1;
     }
 
-    .nav-item:hover a {
+    .nav-item:hover a, .nav-item.active a {
         border-top: unset;
         border-bottom: solid 3px #0065FC;
     }
