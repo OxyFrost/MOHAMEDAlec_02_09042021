@@ -107,12 +107,13 @@ button {
     border-left: none;
     padding: 5px;
     outline: none;
-    font-weight: bold;
+    height: 33px;
+
 }
 
 .searchButtonGPS {
     width: 40px;
-    height: 36px;
+    height: 45px;
     border: 2px solid #F2F2F2;
     background: #F2F2F2;
     text-align: center;
@@ -122,12 +123,12 @@ button {
 }
 
 .searchButton {
-    height: 36px;
+    height: 45px;
     border: 1px solid #0065FC;
     background: #0065FC;
     text-align: center;
     color: #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 8px 8px 0;
     cursor: pointer;
     font-size: 20px;
 }
@@ -248,7 +249,7 @@ button {
     display: flex;
     flex-flow: column;
     width: 300px;
-    height: 220px;
+    height: 190px;
     border-radius: 10px;
     background-color: white;
     margin: 10px 5px;
@@ -274,12 +275,12 @@ button {
 
 .cardContent {
     margin-top: -10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 14px;
 }
 
 .sectionPopulaire {
-    width: 25%;
+    width: 26%;
     float: left;
     margin-top: 10px;
     margin-right: 15px;
@@ -293,8 +294,8 @@ button {
     position: relative;
     display: flex;
     flex-flow: row;
-    width: 300px;
-    height: 125px;
+    width: 315px;
+    height: 136px;
     border-radius: 10px;
     background-color: white;
     margin: 10px 5px;
