@@ -241,6 +241,14 @@ button {
     padding: 2px 10px;
 }
 
+.starActive {
+    color: #0065FC;
+}
+
+.starInactive{
+    color: lightgrey;
+}
+
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -402,7 +410,7 @@ button {
 /* Partie Responsive pour Ipad */
 
 @media only screen
-and (max-device-width: 1024px) {
+and (max-width: 1024px) {
 
     .sectionPopulaire {
         order: 1;
@@ -448,7 +456,7 @@ and (max-device-width: 1024px) {
 
 /* Partie Responsive site Mobile */
 @media only screen
-and (max-device-width: 506px) {
+and (max-width: 506px) {
 
     .signup {
         order: 1;
@@ -487,6 +495,10 @@ and (max-device-width: 506px) {
         left: -15px;
     }
 
+    .searchButton {
+        font-size: 12px;
+    }
+
     .card{
         width: 95%;
     }
@@ -501,6 +513,15 @@ and (max-device-width: 506px) {
 
     .sectionActivity {
         padding-left: 0;
+    }
+
+    .ActivitésContainer{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .cardActivités {
+        width: 94%;
     }
 
     .one, .two{
